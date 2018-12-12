@@ -87,6 +87,12 @@
   font-size: 14px;
   font-weight: 400;
   text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.main .header-nav__item:hover > a {
+  color: #f48f42;
 }
 
 .main .header-nav__item::after {
@@ -98,10 +104,6 @@
   background-color: #acacac;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-}
-
-.main .header-nav__item:hover::after {
-  height: 3px;
 }
 
 .main .header-contacts {

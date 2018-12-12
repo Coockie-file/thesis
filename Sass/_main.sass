@@ -20,6 +20,10 @@
             size: 14px
             weight: 400
           text-decoration: none
+          transition: all 0.3s
+        &:hover
+          & > a
+            color: #f48f42
         &::after
           content: ''
           width: 100%
@@ -28,9 +32,6 @@
           margin-top: -2px
           background-color: $underline
           transition: all 0.2s
-        &:hover
-          &::after
-            height: 3px
     &-contacts
       color: $phone
       font: 
