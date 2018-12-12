@@ -237,6 +237,7 @@
   }
   .main .header-menu__nav {
     display: none;
+    width: 200px;
     position: absolute;
     top: 30px;
     left: 0;
