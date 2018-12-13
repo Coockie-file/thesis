@@ -1,7 +1,11 @@
 .main
   background-color: $black
   background-image: url('../Images/main/main-bg.png') 
-  height: 100vh
+  background-repeat: no-repeat
+  & .container
+    +flex
+    align-items: flex-start
+    padding-top: 125px
   & .header
     background-color: #fff
     & .container
@@ -63,5 +67,94 @@
             background-color: darken($hyperlink,20%)
     &-menu
       display: none
-         
+  &-description
+    max-height: 429px
+    margin-bottom: 80px
+  &-headline
+    color: #fffafa
+    font-family: $pnr
+    &__title
+      margin-bottom: 50px
+      font:
+        size: 48px
+        weight: 400
+      line-height: 60px
+    &__subtitle
+      margin-bottom: 63px
+      font:
+        size: 20px
+        weight: 300
+  &-list
+    &__item
+      +flex
+      justify-content: flex-start
+      margin-bottom: 20px
+      color: $white
+      font:
+        family: $pnr
+        size: 15px
+        weight: 300
+      &:last-child
+        margin-bottom: 0
+      &-image
+        margin-right: 25px
+        &-first
+          +before
+        &-second
+          +before
+          padding: 8px 
+        &-third
+          height: 35px
+          width: 35px
+          +before
+          background: url('../Images/main/reload.png') no-repeat center
+        &-fourth
+          height: 35px
+          width: 35px
+          +before
+          background: url('../Images/main/map-location.png') no-repeat center
+  &-form
+    max-width: 370px
+    border: 1px solid $white
+    background-color: $white
+    padding: 40px 55px
+    &__wrap
+      width: 260px
+    &__title
+      max-width: 235px
+      margin: 0 auto
+      margin-bottom: 28px
+      color: $black
+      font:
+        family: $pnr
+        size: 18px
+        weight: 400
+      text-align: center
+    & form
+      margin: 0 auto
+      display: flex
+      flex-flow: column nowrap
+      & input
+        +input
+        margin-bottom: 15px
+        &:last-child
+          margin-bottom: 20px
+      & button
+        outline: none
+        border: none
+        padding: 25px
+        color: $white
+        font:
+          family: $pnsb
+          size: 15px
+          weight: 400
+        background-color: #23bac1
+        text-transform: uppercase
+        &:hover
+          outline: none
+          border: none
+        &:focus
+          outline: none
+          border: none
+
 
