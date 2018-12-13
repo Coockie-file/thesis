@@ -201,6 +201,18 @@
   }
 }
 
+@media (max-width: 838px) {
+  .main .header-nav__item a {
+    font-size: 12px;
+  }
+  .main .header-contacts__phone {
+    font-size: 15px;
+  }
+  .main .header-contacts__callback a {
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
