@@ -36,12 +36,12 @@
             </div>
           </div>
             <div class="header-menu__nav" id="mobile-menu">
-              <a href="#">Главная</a>
-              <a href="#">Виды макетов </a>
-              <a href="#">Комплектация макетов</a>
-              <a href="#">Реализованные проекты</a>
-              <a href="#">Наши клиенты</a>
-              <a href="#">Контакты</a>
+              <a id="mobile-link" href="#">Главная</a>
+              <a id="mobile-link-2" href="#">Виды макетов </a>
+              <a id="mobile-link-3" href="#">Комплектация макетов</a>
+              <a id="mobile-link-4" href="#">Реализованные проекты</a>
+              <a id="mobile-link-5" href="#">Наши клиенты</a>
+              <a id="mobile-link-6" href="#">Контакты</a>
             </div>
           
         </div>
@@ -117,8 +117,23 @@
       $('#check').on('click', function(){
         $('.header-menu__nav').addClass('menu-visible')
       });
-      $('.header-menu__burger-line').on('click', function(){
-        $('.header-menu__nav').addClass('menu-unvisible')
+      $('#mobile-link').on('click', function(){
+        $('.header-menu__nav').removeClass('menu-visible')
+      });
+      $('#mobile-link-2').on('click', function(){
+        $('.header-menu__nav').removeClass('menu-visible')
+      });
+      $('#mobile-link-3').on('click', function(){
+        $('.header-menu__nav').removeClass('menu-visible')
+      });
+      $('#mobile-link-4').on('click', function(){
+        $('.header-menu__nav').removeClass('menu-visible')
+      });
+      $('#mobile-link-5').on('click', function(){
+        $('.header-menu__nav').removeClass('menu-visible')
+      });
+      $('#mobile-link-6').on('click', function(){
+        $('.header-menu__nav').removeClass('menu-visible')
       });
     })
   </script>
