@@ -142,21 +142,22 @@
         &:last-child
           margin-bottom: 20px
       & button
-        outline: none
-        border: none
         padding: 25px
         color: $white
         font:
           family: $pnsb
           size: 15px
           weight: 400
-        background-color: #23bac1
+        background-color: $hover-button
+        border: 1px solid $hover-button
         text-transform: uppercase
+        transition: all 0.3s
         &:hover
-          outline: none
-          border: none
+          color: lighten($black, 30%)
+          background-color: $white
+          border: 1px solid #e8e8e8
         &:focus
-          outline: none
-          border: none
+          box-shadow: inset 0 0 25px 2px  lighten($black, 80%)
+          
 
 

@@ -1,0 +1,102 @@
+.layout
+  & .container
+    +flex
+    flex-flow: column nowrap
+    padding-top: 101px
+    padding-bottom: 32px
+  &-headline
+    text-align: center
+    color: $black
+    font-family: $pnr
+    &__title
+      font:
+        size: 36px
+        weight: 400
+      &::after
+        content: ''
+        display: block
+        width: 31px
+        height: 2px
+        margin: 0 auto
+        margin-top: 25px
+        margin-bottom: 43px
+        background-color: $hover-button
+    &__subtitle
+      margin-bottom: 29px
+      font:
+        size: 20px
+        weight: 300
+  &-blocks
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-around
+    align-items: stretch
+    &__block
+      min-height: 787px
+      display: flex
+      flex-flow: column nowrap
+      justify-content: space-between
+      align-items: center
+      padding: 33px 35px 
+      padding-bottom: 40px
+      transition: all 0.2s
+      &:hover
+        box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1)
+      &-title
+        margin-bottom: 24px
+        text-align: center
+        color: $black
+        font:
+          family: $pnr
+          size: 20px
+          weight: 400
+      &-image
+        margin-bottom: 35px
+        & image
+          width: 300px
+          max-height: 220px
+      &-description 
+        text-align: center
+        color: $black
+        font:
+          family: $pnr
+          size: 16px
+          weight: 300
+        line-height: 35px
+        &::after
+          content: ''
+          margin: 5px auto
+          display: block
+          width: 9px
+          min-height: 2px
+          background-color: $hover-button
+        &-last
+          margin-bottom: 31px
+          &::after
+            display: none
+      &-button
+        display: flex
+        flex-flow: row nowrap
+        justify-content: center
+        & button
+          width: 230px
+          padding: 23px
+          border: 1px solid rgba(#aeaeae, 20%)
+          background-color: #ffffff
+          color: $black
+            family: $pnsb
+            size: 13px
+            weight: 400
+          text-transform: uppercase
+          transition: all 0.2s
+          &:hover
+            color: $white
+            background-color: $hover-button
+            border: 1px solid $hover-button
+          &:focus
+            box-shadow: inset 0 0 25px 2px  $white
+#second
+  margin-bottom: 70px
+#sixth
+  margin-bottom: 163px
+    
