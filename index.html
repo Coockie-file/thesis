@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="Reset/reset.css">
+  <link rel="stylesheet" href="CSS/slick.css">
   <link rel="stylesheet" href="CSS/main.css">
 </head>
 <body class="body">
@@ -281,37 +282,70 @@
 
       <div class="projects-slider">
 
-        <div class="projects-slider__image">
-          <img src="" alt="">
+        <div class="slider-item">
+            <div class="projects-slider__image">
+                <img src="Images/slider/artek.jpg" alt="">
+              </div>
+      
+              <div class="projects-slider__description">
+                <div class="projects-slider__description-title">
+                  <h1>Порт Артек</h1>
+                </div>
+      
+                <div class="projects-slider__description-description"><span>Описание:</span> <br> Презентация порта Артек для первых лиц государства</div>
+      
+                <div class="projects-slider__description-numbers">
+      
+                  <div class="scale"><span>Масштаб:</span> <br> 1:200</div>
+      
+                  <div class="size"><span>Размер::</span> <br>1000х2000</div>
+      
+                  <div class="term"><span>Срок изготовления::</span> <br>40 дней</div>
+                </div>
+                <div class="projects-slider__description-button">
+                  <button type="submit"> Заказать макет</button>
+                </div>
+      
+                
+              </div>
         </div>
 
-        <div class="projects-slider__description">
-          <div class="projects-slider__description-title">
-            <h1>Порт Артек</h1>
+
+          <div class="slider-item">
+              <div class="projects-slider__image">
+                  <img src="Images/slider/artek.jpg" alt="">
+                </div>
+        
+                <div class="projects-slider__description">
+                  <div class="projects-slider__description-title">
+                    <h1>Порт Артек</h1>
+                  </div>
+        
+                  <div class="projects-slider__description-description"><span>Описание:</span> <br> Презентация порта Артек для первых лиц государства</div>
+        
+                  <div class="projects-slider__description-numbers">
+        
+                    <div class="scale"><span>Масштаб:</span> <br> 1:200</div>
+        
+                    <div class="size"><span>Размер::</span> <br>1000х2000</div>
+        
+                    <div class="term"><span>Срок изготовления::</span> <br>40 дней</div>
+                  </div>
+      
+                  <div class="projects-slider__description-button">
+                    <button type="submit"> Заказать макет</button>
+                  </div>
+        
+              </div>
           </div>
 
-          <div class="projects-slider__description-description"><span>Описание:</span> <br> Презентация порта Артек для первых лиц государства</div>
-
-          <div class="projects-slider__description-numbers">
-
-            <div class="scale"><span>Масштаб:</span> <br> 1:200</div>
-
-            <div class="siz"><span>Размер::</span> <br>1000х2000</div>
-
-            <div class="term"><span>Срок изготовления::</span> <br>40 дней</div>
-
-          <div class="projects-slider__description-button">
-            <button type="submit"> Заказать макет</button>
-          </div>
-
-          </div>
-        </div>
       </div>
     </div>
   </div>
            
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script>
     $(document).ready(function(){
       $('#check').on('click', function(){
@@ -336,6 +370,16 @@
         $('.header-menu__nav').removeClass('menu-visible')
       });
     })
+  </script>
+  <script>
+  $(document).ready(function(){
+    $('.projects-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      nextArrow: <div class="next-arrow"></div>,
+      prevArrow: <div class="prev-arrow"></div>
+    });
+  });
   </script>
 </body>                                             
 </html>
