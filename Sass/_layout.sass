@@ -32,7 +32,6 @@
     justify-content: space-around
     align-items: stretch
     &__block
-      min-height: 787px
       display: flex
       flex-flow: column nowrap
       justify-content: space-between
@@ -40,8 +39,7 @@
       padding: 33px 35px 
       padding-bottom: 40px
       transition: all 0.2s
-      &:hover
-        box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1)
+      max-height: 680px
       &-title
         margin-bottom: 24px
         text-align: center
@@ -51,10 +49,15 @@
           size: 20px
           weight: 400
       &-image
-        margin-bottom: 35px
-        & image
+        margin-bottom: 0px
+        & img
           width: 300px
           max-height: 220px
+          filter: grayscale(100%)
+      &:hover
+        box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1)
+        & > .layout-blocks__block-image > img
+          filter: none
       &-description 
         text-align: center
         color: $black
@@ -65,7 +68,7 @@
         line-height: 35px
         &::after
           content: ''
-          margin: 5px auto
+          margin: -2px auto
           display: block
           width: 9px
           min-height: 2px
@@ -98,5 +101,5 @@
 #second
   margin-bottom: 70px
 #sixth
-  margin-bottom: 163px
+  margin-bottom: 100px
     

@@ -267,81 +267,7 @@
     </div>
   </section>
 
-  <div class="projects">
-    <div class="container">
 
-      <div class="projects-headline">
-        <div class="projects-headline__title">
-          <h1>Реализованные проекты</h1>
-        </div>
-
-        <div class="projects-headline__subtitle">
-          <h3>Более 100 компаний уже решают свои бизнес – задачи с помощью наших макетов</h3>
-        </div>
-      </div>
-
-      <div class="projects-slider">
-
-        <div class="slider-item">
-            <div class="projects-slider__image">
-                <img src="Images/slider/artek.jpg" alt="">
-              </div>
-      
-              <div class="projects-slider__description">
-                <div class="projects-slider__description-title">
-                  <h1>Порт Артек</h1>
-                </div>
-      
-                <div class="projects-slider__description-description"><span>Описание:</span> <br> Презентация порта Артек для первых лиц государства</div>
-      
-                <div class="projects-slider__description-numbers">
-      
-                  <div class="scale"><span>Масштаб:</span> <br> 1:200</div>
-      
-                  <div class="size"><span>Размер::</span> <br>1000х2000</div>
-      
-                  <div class="term"><span>Срок изготовления::</span> <br>40 дней</div>
-                </div>
-                <div class="projects-slider__description-button">
-                  <button type="submit"> Заказать макет</button>
-                </div>
-      
-                
-              </div>
-        </div>
-
-
-          <div class="slider-item">
-              <div class="projects-slider__image">
-                  <img src="Images/slider/artek.jpg" alt="">
-                </div>
-        
-                <div class="projects-slider__description">
-                  <div class="projects-slider__description-title">
-                    <h1>Порт Артек</h1>
-                  </div>
-        
-                  <div class="projects-slider__description-description"><span>Описание:</span> <br> Презентация порта Артек для первых лиц государства</div>
-        
-                  <div class="projects-slider__description-numbers">
-        
-                    <div class="scale"><span>Масштаб:</span> <br> 1:200</div>
-        
-                    <div class="size"><span>Размер::</span> <br>1000х2000</div>
-        
-                    <div class="term"><span>Срок изготовления::</span> <br>40 дней</div>
-                  </div>
-      
-                  <div class="projects-slider__description-button">
-                    <button type="submit"> Заказать макет</button>
-                  </div>
-        
-              </div>
-          </div>
-
-      </div>
-    </div>
-  </div>
            
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -349,7 +275,7 @@
   <script>
     $(document).ready(function(){
       $('#check').on('click', function(){
-        $('.header-menu__nav').addClass('menu-visible')
+        $('.header-menu__nav').toggleClass('menu-visible')
       });
       $('#mobile-link').on('click', function(){
         $('.header-menu__nav').removeClass('menu-visible')
@@ -371,13 +297,6 @@
       });
     })
   </script>
-  <script>
-  $(document).ready(function(){
-    $('.projects-slider').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1
-    });
-  });
-  </script>
+
 </body>                                             
 </html>
