@@ -14,6 +14,11 @@
   .layout
     & .container
       padding-top: 60px
+.arrow
+  &-right
+    margin-left: 20px
+  &-left
+    left: -40px
 @media (max-width: 992px)
   .main
     & .container
@@ -47,6 +52,16 @@
           padding: 10px
         & button
           padding: 15px
+  .projects
+    &-slider
+      width: 400px
+      &__image
+        margin: 0 auto
+        width: 100%
+      &__text
+        &-title
+          margin-bottom: 25px
+      
 @media (max-width: 838px)
   .main
     & .header
@@ -150,6 +165,15 @@
           padding: 20px 
         & button
           padding: 25px
+  .projects
+    & .container
+      padding: 0
+      padding-bottom: 20px
+    &-title
+      &::after
+        margin-bottom: 20px
+    &-subtitle
+      margin-bottom: 25px
 @media (max-width: 576px)
   .container
     min-width: 320px
@@ -167,6 +191,47 @@
         margin: 0 auto
         & input
           max-width: 100%
+  .layout
+    &-headline
+      &__title
+        font-size: 30px
+      &__subtitle
+        margin: 0 auto
+        margin-bottom: 15px
+        max-width: 80%
+  .projects
+    width: 90%
+    margin: 0 auto
+    &-title
+      font-size: 25px
+    &-subtitle
+      margin: 0 auto
+      margin-bottom: 15px
+      font-size: 20px
+      max-width: 80%
+    &-slider
+      margin: 0 auto
+      width: 90%
+      &__image
+        width: 80%
+      &__text
+        &-title
+          margin-bottom: 15px
+          font-size: 18px
+        &-description
+          margin-bottom: 15px
+          font-size: 14px
+        &-button
+          & button
+            margin-top: 2px
+            padding: 6px
+        & .light
+          margin-bottom: 8px     
+.arrow
+  display: none
+  width: 0
+  &-right
+    margin-left: 0
   
 
 
