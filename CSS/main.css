@@ -666,6 +666,7 @@
   cursor: pointer;
   width: 14px;
   height: 26px;
+  display: block;
   position: absolute;
   left: 0;
   right: 0;
@@ -730,14 +731,6 @@ button:focus {
   .layout .container {
     padding-top: 60px;
   }
-}
-
-.arrow-right {
-  margin-left: 20px;
-}
-
-.arrow-left {
-  left: -40px;
 }
 
 @media (max-width: 992px) {
@@ -972,6 +965,9 @@ button:focus {
 }
 
 @media (max-width: 576px) {
+  body {
+    max-width: 100%;
+  }
   .container {
     min-width: 320px;
   }
@@ -1007,8 +1003,7 @@ button:focus {
     max-width: 80%;
   }
   .projects {
-    width: 90%;
-    margin: 0 auto;
+    width: 85%;
   }
   .projects-title {
     font-size: 25px;
@@ -1020,7 +1015,7 @@ button:focus {
     max-width: 80%;
   }
   .projects-slider {
-    margin: 0 auto;
+    margin-left: 50px;
     width: 90%;
   }
   .projects-slider__image {
@@ -1041,14 +1036,5 @@ button:focus {
   .projects-slider__text .light {
     margin-bottom: 8px;
   }
-}
-
-.arrow {
-  display: none;
-  width: 0;
-}
-
-.arrow-right {
-  margin-left: 0;
 }
 /*# sourceMappingURL=main.css.map */
