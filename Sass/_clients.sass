@@ -16,12 +16,23 @@
     max-width: 964px  
     margin: 0 auto
     +flex
+    justify-content: space-around
     &__item
-      border: 1px solid red
       max-width: 170px
-      margin-right: 50px
       align-self: center
+      margin-right: 20px
+      margin-left: 15px
       vertical-align: middle
       min-height: 68px
-      &:last-child
-        margin-right: 0
+      &-small
+        padding-top: 15px
+.second-arrow
+  cursor: pointer
+  width: 68px
+  height: 26px
+  &__right
+    margin-left: 91px 
+    background-image: url('../Images/slider/next-arrow.png')
+  &__left
+    margin-right: 91px 
+    background-image: url('../Images/slider/prev-arrow.png')

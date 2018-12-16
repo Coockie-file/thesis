@@ -14,6 +14,18 @@
   .layout
     & .container
       padding-top: 60px
+  .clients
+    &-slider
+      max-width: 768px
+.second-arroww
+  width: 90px
+  height: 26px
+  &__next
+    margin-left: 20px
+    background-image: url('../Images/slider/next-arrow.png')
+  &__prev
+    margin-right: 20px
+    background-image: url('../Images/slider/prev-arrow.png')
 @media (max-width: 992px)
   .main
     & .container
@@ -63,6 +75,15 @@
       margin-bottom: 50px
     &-item
       margin-bottom: 50px
+.second-arrowww
+  width: 100px
+  height: 26px
+  &__next
+    margin-left: 20px
+    background-image: url('../Images/slider/next-arrow.png')
+  &__prev
+    margin-right: 20px
+    background-image: url('../Images/slider/prev-arrow.png')
 @media (max-width: 838px)
   .main
     & .header
@@ -192,11 +213,36 @@
       width: 50%
       &:nth-of-type(n+5)
         margin-bottom: 40px
+  .clients
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: center
+    & .container
+      padding: 50px 0
+    &-title
+      margin-bottom: 40px
+    &-slider
+      max-width: 476px
+      margin: 0 auto
+      margin-left: 15px
+      &__item
+        margin-right: 10px
+        margin-left: 10px
+.second-arrowwww
+  width: 160px
+  height: 26px
+  &__next
+    margin-left: 20px
+    background-image: url('../Images/slider/next-arrow.png')
+  &__prev
+    margin-right: 20px
+    background-image: url('../Images/slider/prev-arrow.png')
 @media (max-width: 576px)
   body
-    max-width: 100%
+    min-width: 100%
   .container
-    min-width: 320px
+    max-width: 320px
   .main
     min-width: 100%
     background-size: cover
@@ -255,6 +301,17 @@
       max-width: 80%
     &-item
       width: 100%
+  .clients
+    &-slider
+.second-arrowwwww
+  width: 160px
+  height: 13px
+  &__next
+    margin-left: 20px
+    background-image: url('../Images/slider/right-arrow.svg')
+  &__prev
+    margin-right: 20px
+    background-image: url('../Images/slider/left-arrow.svg')
 
 
 
