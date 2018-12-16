@@ -56,6 +56,13 @@
       &__text
         &-title
           margin-bottom: 25px 
+  .plan
+    & .container
+      padding-top: 40px
+    &-title
+      margin-bottom: 50px
+    &-item
+      margin-bottom: 50px
 @media (max-width: 838px)
   .main
     & .header
@@ -168,6 +175,23 @@
         margin-bottom: 20px
     &-subtitle
       margin-bottom: 25px
+  .plan
+    & .container
+    padding-top: 40px
+    padding-bottom: 0px
+    background-image: none
+    background-color: darken($white,95%)
+    min-height: 100vh
+    &-title
+      margin-bottom: 40px
+      font-size: 20px
+    &-items
+      margin-bottom: -120px
+    &-item
+      margin-bottom: 60px
+      width: 50%
+      &:nth-of-type(n+5)
+        margin-bottom: 40px
 @media (max-width: 576px)
   body
     max-width: 100%
@@ -221,7 +245,14 @@
             margin-top: 2px
             padding: 6px
         & .light
-          margin-bottom: 8px     
+          margin-bottom: 8px    
+  .plan
+    min-width: 100%
+    &-title
+      max-width: 80%
+      font-size: 18px
+    &-items
+      max-width: 80%
 
 
 

@@ -688,6 +688,78 @@
   margin-right: 60px;
 }
 
+.plan {
+  background-color: #000000;
+  background-image: url("../Images/plan/_MG_9130.png");
+  background-repeat: no-repeat;
+}
+
+.plan .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 108px;
+  padding-bottom: 145px;
+}
+
+.plan-title {
+  margin-bottom: 99px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Proxima Nova Regular";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+}
+
+.plan-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.plan-item {
+  margin-bottom: 87px;
+  width: 25%;
+  text-align: center;
+}
+
+.plan-item:nth-of-type(n+5) {
+  margin-bottom: -60px;
+}
+
+.plan-item__image {
+  min-height: 51px;
+}
+
+.plan-item__legend {
+  margin-top: 41px;
+  color: #ffffff;
+  font-family: "Proxima Nova Regular";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -785,6 +857,15 @@ button:focus {
   }
   .projects-slider__text-title {
     margin-bottom: 25px;
+  }
+  .plan .container {
+    padding-top: 40px;
+  }
+  .plan-title {
+    margin-bottom: 50px;
+  }
+  .plan-item {
+    margin-bottom: 50px;
   }
 }
 
@@ -962,6 +1043,27 @@ button:focus {
   .projects-subtitle {
     margin-bottom: 25px;
   }
+  .plan {
+    padding-top: 40px;
+    padding-bottom: 0px;
+    background-image: none;
+    background-color: #0d0d0d;
+    min-height: 100vh;
+  }
+  .plan-title {
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+  .plan-items {
+    margin-bottom: -120px;
+  }
+  .plan-item {
+    margin-bottom: 60px;
+    width: 50%;
+  }
+  .plan-item:nth-of-type(n+5) {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1035,6 +1137,16 @@ button:focus {
   }
   .projects-slider__text .light {
     margin-bottom: 8px;
+  }
+  .plan {
+    min-width: 100%;
+  }
+  .plan-title {
+    max-width: 80%;
+    font-size: 18px;
+  }
+  .plan-items {
+    max-width: 80%;
   }
 }
 /*# sourceMappingURL=main.css.map */
