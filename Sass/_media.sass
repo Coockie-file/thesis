@@ -31,6 +31,26 @@
     &__prev
       margin-right: 20px
       background-image: url('../Images/slider/prev-arrow.png')
+  .arro0w
+    width: 14px
+    height: 26px
+    cursor: pointer
+    display: block
+    position: absolute
+    left: 0
+    right: 0
+    &-right
+      background-image: url('../Images/slider/next-arrow.png')
+      top: 45%
+      bottom: 45%
+      left: 100%
+      margin-left: 25px
+    &-left
+      background-image: url('../Images/slider/prev-arrow.png')
+      top: 45%
+      bottom: 45%
+      left: -40px
+      margin-right: 20px
 @media (max-width: 992px)
   .main
     & .container
@@ -64,6 +84,16 @@
           padding: 10px
         & button
           padding: 15px
+  .layout
+    &-blocks
+      &__block
+        &-image
+          & img
+            filter: grayscale(100%)
+        &:hover
+          box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1)
+          & > .layout-blocks__block-image > img
+            filter: none
   .projects
     &-slider
       width: 400px
@@ -281,7 +311,7 @@
         margin-bottom: 15px
         max-width: 80%
   .projects
-    width: 85%
+    width: 100%
     &-title
       font-size: 25px
     &-subtitle
@@ -290,7 +320,6 @@
       font-size: 20px
       max-width: 80%
     &-slider
-      margin-left: 50px
       width: 90%
       &__image
         width: 80%
@@ -335,7 +364,28 @@
       padding: 20px 0
     &-adress
       margin-bottom: 15px
-
+  .arro00w
+    width: 14px
+    height: 26px
+    cursor: pointer
+    display: block
+    position: absolute
+    left: 0
+    right: 0
+    &-right
+      background-image: url('../Images/slider/right-arrow.svg')
+      background-repeat: no-repeat
+      top: 45%
+      bottom: 45%
+      left: 100%
+      margin-left: 5px
+    &-left
+      background-image: url('../Images/slider/left-arrow.svg')
+      background-repeat: no-repeat
+      top: 45%
+      bottom: 45%
+      left: -20px
+      margin-right: 5px
 
 
 

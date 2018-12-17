@@ -447,18 +447,6 @@
 .layout-blocks__block-image img {
   width: 300px;
   max-height: 220px;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-.layout-blocks__block:hover {
-  -webkit-box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
-}
-
-.layout-blocks__block:hover > .layout-blocks__block-image > img {
-  -webkit-filter: none;
-          filter: none;
 }
 
 .layout-blocks__block-description {
@@ -996,6 +984,29 @@ button:focus {
     margin-right: 20px;
     background-image: url("../Images/slider/prev-arrow.png");
   }
+  .arro0w {
+    width: 14px;
+    height: 26px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .arro0w-right {
+    background-image: url("../Images/slider/next-arrow.png");
+    top: 45%;
+    bottom: 45%;
+    left: 100%;
+    margin-left: 25px;
+  }
+  .arro0w-left {
+    background-image: url("../Images/slider/prev-arrow.png");
+    top: 45%;
+    bottom: 45%;
+    left: -40px;
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1040,6 +1051,18 @@ button:focus {
   }
   .main-form form button {
     padding: 15px;
+  }
+  .layout-blocks__block-image img {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+  }
+  .layout-blocks__block:hover {
+    -webkit-box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
+  }
+  .layout-blocks__block:hover > .layout-blocks__block-image > img {
+    -webkit-filter: none;
+            filter: none;
   }
   .projects-slider {
     width: 400px;
@@ -1379,7 +1402,7 @@ button:focus {
     max-width: 80%;
   }
   .projects {
-    width: 85%;
+    width: 100%;
   }
   .projects-title {
     font-size: 25px;
@@ -1391,7 +1414,6 @@ button:focus {
     max-width: 80%;
   }
   .projects-slider {
-    margin-left: 50px;
     width: 90%;
   }
   .projects-slider__image {
@@ -1452,6 +1474,31 @@ button:focus {
   }
   .footer-adress {
     margin-bottom: 15px;
+  }
+  .arro00w {
+    width: 14px;
+    height: 26px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .arro00w-right {
+    background-image: url("../Images/slider/right-arrow.svg");
+    background-repeat: no-repeat;
+    top: 45%;
+    bottom: 45%;
+    left: 100%;
+    margin-left: 5px;
+  }
+  .arro00w-left {
+    background-image: url("../Images/slider/left-arrow.svg");
+    background-repeat: no-repeat;
+    top: 45%;
+    bottom: 45%;
+    left: -20px;
+    margin-right: 5px;
   }
 }
 /*# sourceMappingURL=main.css.map */
