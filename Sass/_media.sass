@@ -17,15 +17,20 @@
   .clients
     &-slider
       max-width: 768px
-.second-arroww
-  width: 90px
-  height: 26px
-  &__next
-    margin-left: 20px
-    background-image: url('../Images/slider/next-arrow.png')
-  &__prev
-    margin-right: 20px
-    background-image: url('../Images/slider/prev-arrow.png')
+  .footer
+    &-container
+      max-width: 992px
+      +flex
+      justify-content: space-between
+  .second-arroww
+    width: 90px
+    height: 26px
+    &__next
+      margin-left: 20px
+      background-image: url('../Images/slider/next-arrow.png')
+    &__prev
+      margin-right: 20px
+      background-image: url('../Images/slider/prev-arrow.png')
 @media (max-width: 992px)
   .main
     & .container
@@ -75,15 +80,25 @@
       margin-bottom: 50px
     &-item
       margin-bottom: 50px
-.second-arrowww
-  width: 100px
-  height: 26px
-  &__next
-    margin-left: 20px
-    background-image: url('../Images/slider/next-arrow.png')
-  &__prev
-    margin-right: 20px
-    background-image: url('../Images/slider/prev-arrow.png')
+  .footer
+    &-container
+      max-width: 768px
+      justify-content: space-around
+  .second-arrowww
+    width: 100px
+    height: 26px
+    &__next
+      margin-left: 20px
+      background-image: url('../Images/slider/next-arrow.png')
+    &__prev
+      margin-right: 20px
+      background-image: url('../Images/slider/prev-arrow.png')
+    .footer
+      background-color: $white
+      & .container
+        +flex
+        flex-flow: column nowrap
+        justify-content: space-around
 @media (max-width: 838px)
   .main
     & .header
@@ -229,15 +244,15 @@
       &__item
         margin-right: 10px
         margin-left: 10px
-.second-arrowwww
-  width: 160px
-  height: 26px
-  &__next
-    margin-left: 20px
-    background-image: url('../Images/slider/next-arrow.png')
-  &__prev
-    margin-right: 20px
-    background-image: url('../Images/slider/prev-arrow.png')
+  .second-arrowwww
+    width: 160px
+    height: 26px
+    &__next
+      margin-left: 20px
+      background-image: url('../Images/slider/next-arrow.png')
+    &__prev
+      margin-right: 20px
+      background-image: url('../Images/slider/prev-arrow.png')
 @media (max-width: 576px)
   body
     min-width: 100%
@@ -303,15 +318,23 @@
       width: 100%
   .clients
     &-slider
-.second-arrowwwww
-  width: 160px
-  height: 13px
-  &__next
-    margin-left: 20px
-    background-image: url('../Images/slider/right-arrow.svg')
-  &__prev
-    margin-right: 20px
-    background-image: url('../Images/slider/left-arrow.svg')
+  .second-arrowwwww
+    width: 160px
+    height: 13px
+    &__next
+      margin-left: 20px
+      background-image: url('../Images/slider/right-arrow.svg')
+    &__prev
+      margin-right: 20px
+      background-image: url('../Images/slider/left-arrow.svg')
+  .footer
+    &-container
+      flex-flow: column nowrap
+      align-items: space-around
+      justify-content: center
+      padding: 20px 0
+    &-adress
+      margin-bottom: 15px
 
 
 
