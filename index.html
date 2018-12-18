@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="Reset/reset.css">
   <link rel="stylesheet" href="CSS/slick.css">
   <link rel="stylesheet" href="CSS/main.css">
@@ -146,7 +147,7 @@
           <div class="layout-blocks__block-description layout-blocks__block-description-last">Гостиницы и санатории </div>
     
           <div class="layout-blocks__block-button">
-            <button type="submit"> Рассчитать стоимость </button>
+            <button id="button"> Рассчитать стоимость </button>
           </div>
         </div>
 
@@ -169,7 +170,7 @@
           <div class="layout-blocks__block-description layout-blocks__block-description-last" id="second">Мосты и тоннели </div>
     
           <div class="layout-blocks__block-button">
-            <button type="submit"> Рассчитать стоимость </button>
+            <button id="button-2"> Рассчитать стоимость </button>
           </div>
         </div>
 
@@ -193,7 +194,7 @@
             <div class="layout-blocks__block-description layout-blocks__block-description-last">Технологические линии </div>
       
             <div class="layout-blocks__block-button">
-              <button type="submit"> Рассчитать стоимость </button>
+              <button id="button-3"> Рассчитать стоимость </button>
             </div>
           </div>
 
@@ -217,7 +218,7 @@
               <div class="layout-blocks__block-description layout-blocks__block-description-last">Заводы </div>
         
               <div class="layout-blocks__block-button">
-                <button type="submit"> Рассчитать стоимость </button>
+                <button id="button-4"> Рассчитать стоимость </button>
               </div>
             </div>
 
@@ -240,7 +241,7 @@
                 <div class="layout-blocks__block-description layout-blocks__block-description-last" id="second">Участки </div>
           
                 <div class="layout-blocks__block-button">
-                  <button type="submit"> Рассчитать стоимость </button>
+                  <button id="button-5"> Рассчитать стоимость </button>
                 </div>
               </div>
 
@@ -259,7 +260,7 @@
                       и совершенно любых размеров </div>
             
                   <div class="layout-blocks__block-button">
-                    <button type="submit"> Рассчитать стоимость </button>
+                    <button id="button-6"> Рассчитать стоимость </button>
                   </div>
                 </div>
       </div>
@@ -324,7 +325,7 @@
         </div>
 
         <div class="projects-slider__text-button">  
-          <button> Заказать макет</button>
+          <button id="button-7"> Заказать макет</button>
         </div>
 
         
@@ -482,12 +483,12 @@
     </div>
   </div>
 
- <div class="modal">
+ <div class="modal" id="modal">
    
   <div class="modal-wrap">
       
-      <div class="modal-form" id="modal-form">
-          <div class="modal-form__close">
+      <div class="modal-form">
+          <div class="modal-form__close" id="modal-close">
             <img src="Images/error.svg" alt="закрыть">
           </div>
           <div class="modal-form__wrap">
@@ -564,6 +565,34 @@
       });
     })
   </script>
+<script>
+  $(document).ready(function(){
+  $('#button').on('click', function(){
+    $('#modal').addClass('modal-visible')
+  });
+  $('#button-2').on('click', function(){
+    $('#modal').addClass('modal-visible')
+  });
+  $('#button-3').on('click', function(){
+    $('#modal').addClass('modal-visible')
+  });
+  $('#button-4').on('click', function(){
+    $('#modal').addClass('modal-visible')
+  });
+  $('#button-5').on('click', function(){
+    $('#modal').addClass('modal-visible')
+  });
+  $('#button-6').on('click', function(){
+    $('#modal').addClass('modal-visible')
+  });
+  $('#button-7').on('click', function(){
+    $('#modal').addClass('modal-visible')
+  });
+  $('#modal-close').on('click', function(){
+    $('#modal').removeClass('modal-visible')
+  })
+})
+</script>
   <script src="js/slider.js"> </script>
   <script src="js/slider-2.js"></script>
 

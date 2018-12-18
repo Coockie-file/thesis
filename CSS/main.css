@@ -824,6 +824,13 @@
   margin: auto;
   background-color: rgba(0, 0, 0, 0.52);
   z-index: 99;
+  display: none;
+}
+
+.modal-visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .modal-wrap {
