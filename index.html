@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="Reset/reset.css">
   <link rel="stylesheet" href="CSS/slick.css">
+  <link rel="stylesheet" href="CSS/animate.css">
   <link rel="stylesheet" href="CSS/main.css">
 </head>
 <body class="body">
@@ -99,10 +100,10 @@
                 в течение <strong>30 минут</strong></h1>
           </div>
 
-          <form class="main-form__form" action="">
-            <input type="text" placeholder="Ваше имя" required>
-            <input type="tel" placeholder="Контактный номер" pattern="+7[0-9]{10}" required>
-            <input type="mail" placeholder="Электронная почта" required>
+          <form class="main-form__form" action="mail.php" method="POST" id="js-ajax">
+            <input type="text" name="user_name" placeholder="Ваше имя" required>
+            <input type="tel" name="user_phone" placeholder="Контактный номер" pattern="+7[0-9]{10}" required>
+            <input type="mail" name="user_mail" placeholder="Электронная почта" required>
             <button type="submit"> Оставить заявку </button>
           </form>
 
@@ -497,10 +498,10 @@
                 в течение <strong>30 минут</strong></h1>
           </div>
 
-          <form class="modal-form__form" action="">
-            <input type="text" placeholder="Ваше имя" required>
-            <input type="tel" placeholder="Контактный номер" pattern="+7[0-9]{10}" required>
-            <input type="mail" placeholder="Электронная почта" required>
+          <form class="modal-form__form" action="mail.php" method="POST" id="js-ajax-second">
+            <input type="text" name="user_name" placeholder="Ваше имя" required>
+            <input type="tel" name="user_phone" placeholder="Контактный номер" pattern="+7[0-9]{10}" required>
+            <input type="mail" name="user_phone" placeholder="Электронная почта" required>
             <button type="submit"> Оставить заявку </button>
           </form>
 
@@ -509,6 +510,14 @@
 
   </div>
  
+ </div>
+
+ <div class="thanks thanks-hidden wow bounceIn" data-wow-delay="0s" id="thanks-window">
+    <div class="thanks-close" id="thanks-close">
+      <img src="Images/error.svg" alt="">
+    </div>
+   <h1>Форма была успешно отправлена! <br> Спасибо Вам большое!</h1>
+   <img class="wow swing" data-wow-duration="1s" data-wow-delay="1.5s" src="Images/smiling.svg" alt=""> 
  </div>
 
   <div class="google-map">
@@ -540,6 +549,7 @@
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script>
     $(document).ready(function(){
       $('#check').on('click', function(){
@@ -596,8 +606,49 @@
   });
   $('#modal-close').on('click', function(){
     $('#modal').removeClass('modal-visible')
+  });
+  $('#thanks-close').on('click', function(){
+    $('#thanks-window').addClass('thanks-hidden')
   })
 })
+</script>
+<script>
+    $('#js-ajax').on('submit', function(){
+    var user_nameVal = $('[name = user_name]').val();
+        user_phoneVal = $('[name = user_phone]').val();
+        user_mailVal= $('[name = user_mail]').val();
+        thanks_window= $('#thanks-window');
+    
+    $.ajax({
+      url: 'mailer/smart.php',
+      data: {user_name:user_nameVal, user_phone:user_phoneVal, user_mail:user_mailVal},
+      success: function(){
+        $('#thanks-window').removeClass('thanks-hidden')
+      }
+    });
+    
+    return false;
+  });
+  $('#js-ajax-second').on('submit', function(){
+    var user_nameVal = $('[name = user_name]').val();
+        user_phoneVal = $('[name = user_phone]').val();
+        user_mailVal= $('[name = user_mail]').val();
+        thanks_window= $('#thanks-window');
+    
+    $.ajax({
+      url: 'mailer/smart.php',
+      data: {user_name:user_nameVal, user_phone:user_phoneVal, user_mail:user_mailVal},
+      success: function(){
+        $('#thanks-window').removeClass('thanks-hidden')
+      }
+    });
+    
+    return false;
+  });
+</script>
+<script>
+  new WOW().init();
+</script>
 </script>
   <script src="js/slider.js"> </script>
   <script src="js/slider-2.js"></script>

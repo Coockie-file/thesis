@@ -1,0 +1,31 @@
+.thanks
+  position: fixed
+  top: 0
+  left: 35%
+  right: 35%
+  margin: 0 auto
+  background-color: $white
+  z-index: 99
+  border: 2px solid lighten($black,20%)
+  padding: 20px
+  +flex
+  justify-content: space-around
+  &-hidden
+    display:  none
+  & h1
+    font-family: $pnr
+    font-size: 20px
+    text-align-left
+  & img
+    width: 35px
+    height: 35px
+  &-close
+    cursor: pointer
+    position: absolute
+    top: 4px
+    right: 4px
+    & img
+      width: 16px
+      height: 16px
+
+    
