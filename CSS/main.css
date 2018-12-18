@@ -571,6 +571,11 @@
   max-width: 902px;
 }
 
+.projects-slider__image:focus {
+  outline: none;
+  border: none;
+}
+
 .projects-slider__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -586,6 +591,11 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.projects-slider__text:focus {
+  outline: none;
+  border: none;
 }
 
 .projects-slider__text-title {
@@ -805,6 +815,11 @@
   margin-left: 15px;
   vertical-align: middle;
   min-height: 68px;
+}
+
+.clients-slider__item:focus {
+  outline: none;
+  border: none;
 }
 
 .clients-slider__item-small {
@@ -1192,13 +1207,19 @@ button:focus {
             filter: none;
   }
   .projects-slider {
-    width: 400px;
+    width: 85%;
   }
   .projects-slider__image {
     margin: 0 auto;
     width: 100%;
   }
   .projects-slider__text-title {
+    margin-bottom: 10px;
+  }
+  .projects-slider__text .bold {
+    margin-top: 5px;
+  }
+  .projects-slider__text-description {
     margin-bottom: 25px;
   }
   .plan .container {
@@ -1491,6 +1512,77 @@ button:focus {
   .modal-form {
     width: 90%;
     background-color: white;
+  }
+  .projects {
+    width: 100%;
+  }
+  .projects .container {
+    max-width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    align-items: center;
+  }
+  .projects-title {
+    max-width: 85%;
+  }
+  .projects-slider {
+    width: 80%;
+    margin: 0 auto;
+    margin-right: auto;
+  }
+  .projects-slider__image {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects-slider__text {
+    text-align: center;
+  }
+  .arro00ww {
+    width: 14px;
+    height: 26px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .arro00ww-right {
+    background-image: url("../Images/slider/next-arrow.png");
+    top: 45%;
+    bottom: 45%;
+    left: 105%;
+  }
+  .arro00ww-left {
+    background-image: url("../Images/slider/prev-arrow.png");
+    top: 45%;
+    bottom: 45%;
+    left: -40px;
+    margin-right: 20px;
   }
 }
 

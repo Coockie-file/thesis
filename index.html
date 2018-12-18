@@ -50,7 +50,7 @@
 
         <div class="header-contacts">
           <div class="header-contacts__phone">8 800 891-33-33</div>
-          <div class="header-contacts__callback"><a href="tel:88008913333">Заказать обратный звонок</a></div>
+          <div class="header-contacts__callback"><a href="tel:88008913333" id="button-call-1">Заказать обратный звонок</a></div>
         </div>
       </div>
     </div>
@@ -101,7 +101,7 @@
 
           <form class="main-form__form" action="">
             <input type="text" placeholder="Ваше имя" required>
-            <input type="tel" placeholder="Контактный номер" required>
+            <input type="tel" placeholder="Контактный номер" pattern="+7[0-9]{10}" required>
             <input type="mail" placeholder="Электронная почта" required>
             <button type="submit"> Оставить заявку </button>
           </form>
@@ -284,7 +284,7 @@
       <div class="projects-slider__image">
         <img src="Images/slider/artek.jpg" alt="">
       </div>
-
+    
       <div class="projects-slider__text">
 
         <div class="projects-slider__text-title">
@@ -499,7 +499,7 @@
 
           <form class="modal-form__form" action="">
             <input type="text" placeholder="Ваше имя" required>
-            <input type="tel" placeholder="Контактный номер" required>
+            <input type="tel" placeholder="Контактный номер" pattern="+7[0-9]{10}" required>
             <input type="mail" placeholder="Электронная почта" required>
             <button type="submit"> Оставить заявку </button>
           </form>
@@ -531,7 +531,7 @@
 
       <div class="footer-contacts">
         <div class="footer-contacts__phone">8 800 891-33-33</div>
-        <div class="footer-contacts__callback"><a href="tel:88008913333">Заказать обратный звонок</a></div>
+        <div class="footer-contacts__callback"><a href="tel:88008913333" id="button-call-2">Заказать обратный звонок</a></div>
       </div>
       
     </div>
@@ -586,6 +586,12 @@
     $('#modal').addClass('modal-visible')
   });
   $('#button-7').on('click', function(){
+    $('#modal').addClass('modal-visible')
+  });
+  $('#button-call-1').on('click', function(){
+    $('#modal').addClass('modal-visible')
+  });
+  $('#button-call-2').on('click', function(){
     $('#modal').addClass('modal-visible')
   });
   $('#modal-close').on('click', function(){

@@ -17,8 +17,17 @@ $(document).ready(function(){
       {
         breakpoint: 998,
         settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          nextArrow: '<div class="arro00ww-right arro00ww"></div>',
+          prevArrow: '<div class="arro00ww-left arro00ww"></div>',
         }
       },
       {

@@ -30,12 +30,18 @@
     margin: 0 auto
     max-width: 902px  
     &__image
+      &:focus
+        outline: none
+        border: none
     &__text
       display: flex
       min-height: 100%
       flex-flow: column nowrap
       justify-content: space-between
       align-items: flex-start
+      &:focus
+        outline: none
+        border: none
       &-title
         margin-bottom: 53px
         color: $black
