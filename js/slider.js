@@ -26,6 +26,7 @@ $(document).ready(function(){
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          mobileFirst: true,
           nextArrow: '<div class="arro00ww-right arro00ww"></div>',
           prevArrow: '<div class="arro00ww-left arro00ww"></div>',
         }
@@ -35,6 +36,7 @@ $(document).ready(function(){
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          mobileFirst: true,
           nextArrow: '<div class="arro00w-right arro00w"></div>',
           prevArrow: '<div class="arro00w-left arro00w"></div>',
         }

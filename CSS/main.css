@@ -572,7 +572,23 @@
 .projects-slider {
   position: relative;
   margin: 0 auto;
-  max-width: 902px;
+  max-width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.projects-slider__image img {
+  width: 90%;
 }
 
 .projects-slider__image:focus {
@@ -595,6 +611,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  width: 100%;
 }
 
 .projects-slider__text:focus {
@@ -603,7 +620,7 @@
 }
 
 .projects-slider__text-title {
-  margin-bottom: 53px;
+  margin-bottom: 60px;
   color: #000000;
   font-family: "Proxima Nova Regular";
   font-size: 24px;
@@ -691,15 +708,15 @@
   top: 45%;
   bottom: 45%;
   left: 100%;
-  margin-left: 60px;
+  margin-left: 100px;
 }
 
 .arrow-left {
   background-image: url("../Images/slider/prev-arrow.png");
   top: 45%;
   bottom: 45%;
-  left: -80px;
-  margin-right: 60px;
+  left: -120px;
+  margin-right: 100px;
 }
 
 .plan {
@@ -1192,6 +1209,15 @@ button:focus {
     margin-right: 20px;
     background-image: url("../Images/slider/prev-arrow.png");
   }
+  .projects-slider__text-title {
+    margin-bottom: 40px;
+  }
+  .projects-slider__text-description {
+    margin-bottom: 20px;
+  }
+  .projects-slider__text-button button {
+    margin-top: 20px;
+  }
   .arro0w {
     width: 14px;
     height: 26px;
@@ -1501,6 +1527,12 @@ button:focus {
   .projects .container {
     padding: 0;
     padding-bottom: 20px;
+  }
+  .projects-slider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
   }
   .projects-title::after {
     margin-bottom: 20px;
