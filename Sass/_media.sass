@@ -283,6 +283,10 @@
     &__prev
       margin-right: 20px
       background-image: url('../Images/slider/prev-arrow.png')
+  .modal
+    &-form
+      width: 90%
+      background-color: white
 @media (max-width: 576px)
   body
     min-width: 100%
@@ -386,6 +390,30 @@
       bottom: 45%
       left: -20px
       margin-right: 5px
+  .modal
+    &-wrap
+      max-width: 85%
+    &-form
+      width: 100%
+      display: flex
+      flex-flow: column nowrap
+      justify-content: space-around
+      align-items: center
+      &__title
+        max-width: 200px
+        font-size: 15px
+      &__close
+        right: 15px
+      & form
+        justify-content: space-around
+        align-items: center
+        & input
+          width: 90%
+          padding: 8px
+        & button
+          width: 90%
+          padding: 12px
+
 
 
 
