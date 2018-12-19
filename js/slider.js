@@ -1,46 +1,32 @@
 $(document).ready(function(){
   $('.projects-slider').slick({
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: '<div class="arrow-right arrow"></div>',
-    prevArrow: '<div class="arrow-left arrow"></div>',
+    nextArrow: '<div class="arrow arrow_right"></div>',
+    prevArrow: '<div class="arrow arrow_left"></div>',
     responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          nextArrow: '<div class="arro0w-right arro0w"></div>',
-          prevArrow: '<div class="arro0w-left arro0w"></div>',
-        }
-      },
-      {
-        breakpoint: 998,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          mobileFirst: true,
-          nextArrow: '<div class="arro00ww-right arro00ww"></div>',
-          prevArrow: '<div class="arro00ww-left arro00ww"></div>',
-        }
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          mobileFirst: true,
-          nextArrow: '<div class="arro00w-right arro00w"></div>',
-          prevArrow: '<div class="arro00w-left arro00w"></div>',
-        }
+  {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true
       }
-    ]
-});
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll:2
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 2
+      }
+    }
+  ]
+  });
 });

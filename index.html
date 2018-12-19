@@ -102,7 +102,7 @@
 
           <form class="main-form__form" action="mail.php" method="POST" id="js-ajax">
             <input type="text" name="user_name" placeholder="Ваше имя" required>
-            <input type="tel" name="user_phone" placeholder="Контактный номер" pattern="+7[0-9]{10}" required>
+            <input type="tel" name="user_phone" placeholder="Контактный номер" data-mask="+7 (000) 000-00-00" pattern="[+]\d{1}\s[(]\d{3}[)]\s\d{3}[-]\d{2}[-]\d{2}" required>
             <input type="email" name="user_mail" placeholder="Электронная почта" required>
             <button type="submit"> Оставить заявку </button>
           </form>
@@ -282,61 +282,11 @@
 
     <div class="projects-slider">
 
-      <div class="projects-slider__image">
-        <img src="Images/slider/artek.jpg" alt="">
-      </div>
-    
-      <div class="projects-slider__text">
-
-        <div class="projects-slider__text-title">
-          Порт Артек
-        </div>
-
-        <div class="projects-slider__text-description light">
-          Описание:
-          <div class="projects-slider__text-descr bold">
-            Презентация порта Артек для первых лиц государства
-          </div>
-        </div>
-        
-
-
-        <div class="projects-slider__text-wrap">
-          <div class="projects-slider__text-scale light">
-            Масштаб:
-            <div class="projects-slider__text-scale-item  bold">
-              1:200
-            </div>
-          </div>
-          
-  
-          <div class="projects-slider__text-size light">
-            Размер::
-            <div class="projects-slider__text-size-item bold">
-              1000х2000 
-            </div>
-          </div>
-  
-          <div class="projects-slider__text-term light">
-            Срок изготовления::
-            <div class="projects-slider__text-term-item bold">
-              40 дней
-            </div>
-          </div>
-        </div>
-
-        <div class="projects-slider__text-button">  
-          <button id="button-7"> Заказать макет</button>
-        </div>
-
-        
-
-      </div>
-
-      <div class="projects-slider__image">
+      <div class="projects-slider__wrap">
+        <div class="projects-slider__image">
           <img src="Images/slider/artek.jpg" alt="">
         </div>
-  
+      
         <div class="projects-slider__text">
   
           <div class="projects-slider__text-title">
@@ -377,10 +327,65 @@
           </div>
   
           <div class="projects-slider__text-button">  
-            <button> Заказать макет</button>
+            <button id="button-7"> Заказать макет</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-slider__wrap">
+
+        <div class="projects-slider__image">
+          <img src="Images/slider/artek.jpg" alt="">
+        </div>
+      
+        <div class="projects-slider__text">
+  
+          <div class="projects-slider__text-title">
+            Порт Артек
           </div>
   
+          <div class="projects-slider__text-description light">
+            Описание:
+            <div class="projects-slider__text-descr bold">
+              Презентация порта Артек для первых лиц государства
+            </div>
+          </div>
+          
+  
+  
+          <div class="projects-slider__text-wrap">
+            <div class="projects-slider__text-scale light">
+              Масштаб:
+              <div class="projects-slider__text-scale-item  bold">
+                1:200
+              </div>
+            </div>
+            
+    
+            <div class="projects-slider__text-size light">
+              Размер::
+              <div class="projects-slider__text-size-item bold">
+                1000х2000 
+              </div>
+            </div>
+    
+            <div class="projects-slider__text-term light">
+              Срок изготовления::
+              <div class="projects-slider__text-term-item bold">
+                40 дней
+              </div>
+            </div>
+          </div>
+  
+          <div class="projects-slider__text-button">  
+            <button id="button-7"> Заказать макет</button>
+          </div>
+          
         </div>
+
+      </div>
+
+     
 
     </div>
    </div>                                                 
@@ -500,7 +505,7 @@
 
           <form class="modal-form__form" action="mail.php" method="POST" id="js-ajax-second">
             <input type="text" name="user_name" placeholder="Ваше имя" required>
-            <input type="tel" name="user_phone" placeholder="Контактный номер" pattern="+7[0-9]{10}" required>
+            <input type="tel" name="user_phone" placeholder="Контактный номер" data-mask="+7 (000) 000-00-00" pattern="[+]\d{1}\s[(]\d{3}[)]\s\d{3}[-]\d{2}[-]\d{2}" required>
             <input type="email" name="user_phone" placeholder="Электронная почта" required>
             <button type="submit"> Оставить заявку </button>
           </form>
@@ -639,7 +644,8 @@
       url: 'mailer/smart.php',
       data: {user_name:user_nameVal, user_phone:user_phoneVal, user_mail:user_mailVal},
       success: function(){
-        $('#thanks-window').removeClass('thanks-hidden')
+        $('#thanks-window').removeClass('thanks-hidden');
+        $('#modal').removeClass('modal-visible')
       }
     });
     
@@ -652,6 +658,7 @@
 
   <script src="js/slider.js"> </script>
   <script src="js/slider-2.js"></script>
+  <script src="js/mask.js"></script>
 
 </body>                                             
 </html>

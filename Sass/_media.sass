@@ -31,16 +31,6 @@
     &__prev
       margin-right: 20px
       background-image: url('../Images/slider/prev-arrow.png')
-  .projects
-    &-slider
-      &__text
-        &-title
-          margin-bottom: 40px
-        &-description
-          margin-bottom: 20px
-        &-button
-          & button
-            margin-top: 20px
   .arro0w
     width: 14px
     height: 26px
@@ -61,6 +51,19 @@
       bottom: 45%
       left: -40px
       margin-right: 20px
+  .thanks
+    right: 25%
+    left: 25%
+  .projects
+    &-slider
+      width: 85%
+  .arrow
+    width: 16px
+    display: none
+    &_left
+      left: -40px
+    &_right
+      margin-left: 30px
 @media (max-width: 992px)
   .main
     & .container
@@ -102,19 +105,6 @@
             filter: none
           &:hover
             filter: none
-  .projects
-    &-slider
-      width: 85%
-      &__image
-        margin: 0 auto
-        width: 100%
-      &__text
-        &-title
-          margin-bottom: 10px 
-        & .bold
-          margin-top: 5px
-        &-description
-          margin-bottom: 25px
   .plan
     & .container
       padding-top: 40px
@@ -141,6 +131,37 @@
         +flex
         flex-flow: column nowrap
         justify-content: space-around
+  .projects
+    & .container
+      padding: 30px 0
+    &-title
+      margin-top: 0
+      font-size: 25px
+      &::after
+        margin-top: 10px
+        margin-bottom: 10px
+    &-subtitle
+      margin: 0 auto
+      margin-bottom: 30px
+      max-width: 80%
+      font-size: 16px
+    &-slider
+      width: 405px
+      &__wrap
+        flex-flow: column nowrap
+      &__text
+        margin-top: 25px
+        text-align: center
+        &-title
+          margin: 0 auto
+        &-button
+          margin: 0 auto
+          margin-top: 30px
+  .arrow
+    &_left
+      left: -120px
+    &_right
+      margin-left: 120px
 @media (max-width: 838px)
   .main
     & .header
@@ -244,17 +265,6 @@
           padding: 20px 
         & button
           padding: 25px
-  .projects
-    & .container
-      padding: 0
-      padding-bottom: 20px
-    &-slider
-      flex-flow: column nowrap
-    &-title
-      &::after
-        margin-bottom: 20px
-    &-subtitle
-      margin-bottom: 25px
   .plan
     & .container
     padding-top: 40px
@@ -301,30 +311,6 @@
     &-form
       width: 90%
       background-color: white
-  .projects
-    width: 100%
-    & .container
-      max-width: 85%
-      +flex
-      flex-flow: column nowrap
-      align-items: center
-    &-title
-      max-width: 85%
-    &-slider
-      width: 80%
-      margin: 0 auto
-      margin-right: auto
-      +flex
-      &__image
-        & img
-          width: 100%
-      &__text
-        &-title
-          margin-bottom: 25px
-        &-description
-          margin-bottom: 40px
-        &-wrap
-          margin-bottom: 50px
   .arro00ww
     width: 14px
     height: 26px
@@ -344,6 +330,16 @@
       bottom: 45%
       left: -40px
       margin-right: 20px
+  .thanks
+    right: 20%
+    left: 20%
+    & h1
+      font-size: 15px
+  .arrow
+    &_left
+      left: -60px 
+    &_right
+      margin-left: 45px
 @media (max-width: 576px)
   body
     min-width: 100%
@@ -370,33 +366,7 @@
       &__subtitle
         margin: 0 auto
         margin-bottom: 15px
-        max-width: 80%
-  .projects
-    width: 100%
-    &-title
-      font-size: 25px
-    &-subtitle
-      margin: 0 auto
-      margin-bottom: 15px
-      font-size: 20px
-      max-width: 80%
-    &-slider
-      width: 90%
-      &__image
-        width: 80%
-      &__text
-        &-title
-          margin-bottom: 15px
-          font-size: 18px
-        &-description
-          margin-bottom: 15px
-          font-size: 14px
-        &-button
-          & button
-            margin-top: 2px
-            padding: 6px
-        & .light
-          margin-bottom: 8px    
+        max-width: 80%   
   .plan
     min-width: 100%
     &-title
@@ -470,6 +440,36 @@
         & button
           width: 90%
           padding: 12px
+  .thanks
+    left: 10%
+    & h1
+      font-size: 12px
+  .projects
+    width: 100%
+    & .container
+      width: 100%
+    &-slider
+      width: 85%
+      &__wrap
+        justify-content: center
+      &__image
+        & img
+          width: 100%
+      &__text
+        width: 90%
+        & .bold
+          font-size: 13px
+        &-button
+          & button
+            margin-top: 0
+  .arrow
+    width: 16px
+    &_left
+      background: url('../Images/slider/left-arrow.svg') no-repeat
+      left: -20px
+    &_right
+      background: url('../Images/slider/right-arrow.svg') no-repeat
+      margin-left: 0
 
 
 
