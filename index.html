@@ -101,9 +101,9 @@
           </div>
 
           <form class="main-form__form" action="mail.php" method="POST" id="js-ajax">
-            <input type="text" name="user_name" placeholder="Ваше имя" required>
-            <input type="tel" name="user_phone" placeholder="Контактный номер" data-mask="+7 (000) 000-00-00" pattern="[+]\d{1}\s[(]\d{3}[)]\s\d{3}[-]\d{2}[-]\d{2}" required>
-            <input type="email" name="user_mail" placeholder="Электронная почта" required>
+            <input class="user_name" type="text" name="user_name" placeholder="Ваше имя" required>
+            <input class="user_phone" type="tel" name="user_phone" placeholder="Контактный номер" data-mask="+7 (000) 000-00-00" pattern="[+]\d{1}\s[(]\d{3}[)]\s\d{3}[-]\d{2}[-]\d{2}" required>
+            <input class="user_mail" type="email" name="user_mail" placeholder="Электронная почта" required>
             <button type="submit"> Оставить заявку </button>
           </form>
 
@@ -504,9 +504,9 @@
           </div>
 
           <form class="modal-form__form" action="mail.php" method="POST" id="js-ajax-second">
-            <input type="text" name="user_name" placeholder="Ваше имя" required>
-            <input type="tel" name="user_phone" placeholder="Контактный номер" data-mask="+7 (000) 000-00-00" pattern="[+]\d{1}\s[(]\d{3}[)]\s\d{3}[-]\d{2}[-]\d{2}" required>
-            <input type="email" name="user_phone" placeholder="Электронная почта" required>
+            <input class="user_name2" type="text" name="user_name" placeholder="Ваше имя" required>
+            <input class="user_phone2" type="tel" name="user_phone" placeholder="Контактный номер" data-mask="+7 (000) 000-00-00" pattern="[+]\d{1}\s[(]\d{3}[)]\s\d{3}[-]\d{2}[-]\d{2}" required>
+            <input class="user_mail2" type="email" name="user_phone" placeholder="Электронная почта" required>
             <button type="submit"> Оставить заявку </button>
           </form>
 
@@ -628,7 +628,10 @@
       url: 'mailer/smart.php',
       data: {user_name:user_nameVal, user_phone:user_phoneVal, user_mail:user_mailVal},
       success: function(){
-        $('#thanks-window').removeClass('thanks-hidden')
+        $('#thanks-window').removeClass('thanks-hidden');
+        $("input[type=text], textarea").val("");
+        $("input[type=tel], textarea").val("");
+        $("input[type=email], textarea").val("");
       }
     });
     
@@ -645,7 +648,10 @@
       data: {user_name:user_nameVal, user_phone:user_phoneVal, user_mail:user_mailVal},
       success: function(){
         $('#thanks-window').removeClass('thanks-hidden');
-        $('#modal').removeClass('modal-visible')
+        $('#modal').removeClass('modal-visible');
+        $("input[type=text], textarea").val("");
+        $("input[type=tel], textarea").val("");
+        $("input[type=email], textarea").val("");
       }
     });
     
@@ -655,6 +661,8 @@
 <script>
   new WOW().init();
 </script>
+
+
 
   <script src="js/slider.js"> </script>
   <script src="js/slider-2.js"></script>

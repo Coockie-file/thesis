@@ -603,6 +603,11 @@
           align-items: center;
 }
 
+.projects-slider__wrap:focus {
+  outline: none;
+  border: none;
+}
+
 .projects-slider__image img {
   max-width: 409px;
   height: 340px;
@@ -1002,9 +1007,11 @@
 .thanks {
   position: fixed;
   top: 0;
-  left: 35%;
-  right: 35%;
-  margin: 0 auto;
+  right: 0;
+  left: 0;
+  width: 500px;
+  height: 100px;
+  margin: auto;
   background-color: #ffffff;
   z-index: 99;
   border: 2px solid #333333;
@@ -1248,10 +1255,6 @@ button:focus {
     bottom: 45%;
     left: -40px;
     margin-right: 20px;
-  }
-  .thanks {
-    right: 25%;
-    left: 25%;
   }
   .projects-slider {
     width: 85%;
@@ -1666,8 +1669,7 @@ button:focus {
     margin-right: 20px;
   }
   .thanks {
-    right: 20%;
-    left: 20%;
+    width: 300px;
   }
   .thanks h1 {
     font-size: 15px;
@@ -1825,7 +1827,7 @@ button:focus {
     padding: 12px;
   }
   .thanks {
-    left: 10%;
+    width: 250px;
   }
   .thanks h1 {
     font-size: 12px;
