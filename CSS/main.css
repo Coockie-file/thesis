@@ -1337,9 +1337,9 @@ button:focus {
     -webkit-filter: none;
             filter: none;
   }
-  .layout-blocks__block-image:hover {
-    -webkit-filter: none;
-            filter: none;
+  .layout-blocks__block:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .plan .container {
     padding-top: 40px;
