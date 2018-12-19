@@ -1184,7 +1184,7 @@ button:focus {
 }
 
 .google-map {
-  margin-bottom: 0;
+  margin-bottom: -5px;
   border: none;
   outline: none;
 }
@@ -1295,6 +1295,10 @@ button:focus {
   }
   .main-description {
     margin-bottom: 60px;
+  }
+  .main-form {
+    height: 380px;
+    padding: 30px;
   }
   .main-headline__title {
     margin-bottom: 30px;
